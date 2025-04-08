@@ -6,6 +6,87 @@ html {
   font-size: 62.5%;
 }
 
-h1 {
+body{
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/*========================= coment ====================== */
+a{
+  text-decoration: none;
+}
+
+.conten-main{
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.btn{
+  display: inline-block;
+  min-width: 118px;
+  color: #fff;
+  line-height: 50px;
+  padding: 0 16px;
+  text-align: center;
   font-size: 1.6rem;
+  font-weight: 600;
+  background: #171100;
+  border-radius: 24.5px;
+}
+/*=========================== header =============================== */
+.header{
+  background-color: #fffcf4;
+}
+
+.header.fixel{
+  position: sticky;
+  top: -26px;
+}
+
+.header .body{
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav ul{
+  display: flex;
+}
+
+.body .nav{
+  margin-left: auto;
+}
+
+.nav a{
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+  position: relative;
+}
+
+.nav a:hover{
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.nav .active a::after{
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #171100;
+}
+
+.header .btn-sign-up{
+  min-width: 144px;
+}
+
+.header .action{
+  margin-left: 39px;
 }
