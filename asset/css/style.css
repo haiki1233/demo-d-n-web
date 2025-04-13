@@ -2,21 +2,26 @@ body {
   box-sizing: border-box;
 }
 
+:root {
+  --font-heading: "Sen", sans-serif;
+  --primary-color: #ffb900;
+}
+
 html {
   font-size: 62.5%;
 }
 
-body{
-  font-size: 1rem;
-  font-family: 'Inter', sans-serif;
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
 }
 
 /*========================= coment ====================== */
-a{
+a {
   text-decoration: none;
 }
 
-.conten-main{
+.conten-main {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
@@ -24,7 +29,7 @@ a{
   text-align: center;
 }
 
-.btn{
+.btn {
   display: inline-block;
   min-width: 118px;
   color: #fff;
@@ -34,44 +39,50 @@ a{
   font-size: 1.6rem;
   font-weight: 600;
   background: #171100;
-  border-radius: 24.5px;
-}
-/*=========================== header =============================== */
-.header{
-  background-color: #fffcf4;
+  border-radius: 999px;
 }
 
-.header.fixel{
+.btn:hover {
+  opacity: 0.8;
+}
+
+/*=========================== header =============================== */
+.header {
+  background-color: #fffcf4;
+  z-index: 1;
+}
+
+.header.fixel {
   position: sticky;
   top: -26px;
 }
 
-.header .body{
+.header .body {
   display: flex;
   align-items: center;
   padding: 36px 0 8px;
 }
-.nav ul{
+.nav ul {
   display: flex;
 }
 
-.body .nav{
+.body .nav {
   margin-left: auto;
 }
 
-.nav a{
+.nav a {
   color: #5f5b53;
   font-size: 1.6rem;
   padding: 8px 21px;
   position: relative;
 }
 
-.nav a:hover{
+.nav a:hover {
   color: #171100;
   text-shadow: 1px 0 0 currentColor;
 }
 
-.nav .active a::after{
+.nav .active a::after {
   position: absolute;
   left: 21px;
   bottom: 6px;
@@ -83,10 +94,175 @@ a{
   background-color: #171100;
 }
 
-.header .btn-sign-up{
+.header .btn-sign-up {
   min-width: 144px;
+  margin-left: 39px;
 }
 
-.header .action{
-  margin-left: 39px;
+/* ========================== hero ======================= */
+
+.hero {
+  padding: 56px 171.5px;
+  background-color: #fffcf4;
+}
+
+.hero .body {
+  display: flex;
+}
+
+.hero .hero-left {
+  position: relative;
+  width: 48%;
+}
+
+.hero .hero-right {
+  width: 52%;
+  padding-left: 130px;
+  padding-top: 64px;
+}
+
+/* ========================= hero left ================================ */
+
+.hero .hero-left .anh-cay {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero .conten-left {
+  padding: 24px;
+  width: 270px;
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 16px 32px 0 #171100;
+}
+
+.conten-left .box {
+  display: flex;
+  align-items: center;
+}
+
+.conten-left .box + .box {
+  margin-top: 12px;
+}
+
+.hero-left .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff9e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conten-left .icon2 {
+  background-color: #fcefff;
+}
+
+.conten-left .icon3 {
+  background-color: #ebeaff;
+}
+
+.conten-left .label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.68;
+}
+
+.conten-left .title {
+  color: #171100;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.conten-left .text {
+  margin-left: 24px;
+}
+
+/* ========================== hero right ============================== */
+
+.hero .heading {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: -1.16px;
+}
+
+.hero .desc {
+  margin-top: 22px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+}
+
+.hero .click {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.hero .click-video {
+  margin-left: 28px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-btn {
+  min-width: 180px;
+  background: var(--primary-color);
+  line-height: 64px;
+}
+
+
+.hero .click-video .hero-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hero .click-video span{
+  margin-left: 14px;
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+
+.hero .desc-Recent{
+  margin-top: 48px;
+}
+
+.hero .stats{
+  margin-top: 8px;
+}
+
+.hero .stats strong{
+  margin-right: 15px;
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.23;
+}
+
+.hero .stats strong:nth-child(2){
+  margin-left: 28px;
 }
