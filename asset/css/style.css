@@ -55,6 +55,23 @@ a {
   letter-spacing: -0.76px;
 }
 
+
+/* dấu 3 chấm khi văn bản dài */
+.line-clamp{
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2{
+  --line-clamp: 2;
+}
+
+.break-all{
+  word-break: break-all;
+}
+
 /*=========================== header =============================== */
 .header {
   background-color: #fffcf4;
