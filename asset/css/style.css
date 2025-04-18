@@ -30,7 +30,7 @@ a {
 
 .btn {
   display: inline-block;
-  min-width: 118px;
+  min-width: 112px;
   color: #fff;
   line-height: 50px;
   padding: 0 16px;
@@ -55,20 +55,19 @@ a {
   letter-spacing: -0.76px;
 }
 
-
 /* dấu 3 chấm khi văn bản dài */
-.line-clamp{
+.line-clamp {
   display: -webkit-box;
-  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-line-clamp: var(--line-clamp, 1);
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.line-clamp.line-2{
+.line-clamp.line-2 {
   --line-clamp: 2;
 }
 
-.break-all{
+.break-all {
   word-break: break-all;
 }
 
@@ -120,10 +119,10 @@ a {
   background-color: #171100;
 }
 
-.header .btn-sign-up {
-  min-width: 144px;
+.header .dn{
   margin-left: 39px;
 }
+
 
 /* ========================== hero ======================= */
 
@@ -352,13 +351,13 @@ a {
   gap: 30px;
 }
 
-.popular .course-list .course-item{
+.popular .course-list .course-item {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
 }
 
-.popular .course-list .course-item:hover{
+.popular .course-list .course-item:hover {
   border: 1px solid transparent;
   border-radius: 12px;
   background: #fff;
@@ -376,9 +375,6 @@ a {
   padding: 16px 22px 22px;
 }
 
-
-
-
 .popular .course-item .foot,
 .popular .course-item .ratting,
 .popular .course-item .head {
@@ -387,7 +383,7 @@ a {
   justify-content: space-between;
 }
 
-.popular .course-item .title  a{
+.popular .course-item .title a {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
@@ -411,22 +407,92 @@ a {
   line-height: 1.86;
 }
 
-
-.popular .course-item .foot{
+.popular .course-item .foot {
   margin-top: 16px;
 }
 
-.popular .course-item .price{
+.popular .course-item .price {
   color: #171100;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.67;
 }
 
-.popular .course-item .price-btn{
+.popular .course-item .price-btn {
   border: none;
 }
 
-.popular .course-item .price-btn:hover{
+.popular .course-item .price-btn:hover {
   background: var(--primary-color);
+}
+
+/* ======================== feedback ==================================== */
+.feedback {
+  background: #2e2100;
+  margin-top: 135px;
+  padding: 96px 0;
+}
+
+.feedback .feedback-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 135px;
+}
+
+.feedback .info .feedback-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.feedback .info .feedback-h3 {
+  color: #f7f7f7;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: var(--font-heading);
+  line-height: 1.42;
+  letter-spacing: 0%;
+  margin-top: 18px;
+}
+
+.feedback .info .feedback-text {
+  color: #bfbcb2;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 26px;
+  letter-spacing: 0%;
+  margin-top: 4px;
+}
+
+.feedback .info .dots {
+  margin-top: 28px;
+  display: flex;
+  gap: 6px;
+}
+
+.info .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+
+.info .dots .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
+.feedback .comment {
+  max-width: 66%;
+}
+
+.feedback .comment .comment-text {
+  color: #fff;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 1.54;
+  letter-spacing: 0%;
 }
