@@ -501,9 +501,9 @@ a {
   line-height: 1.54;
 }
 
-/* ====================== features ================================= */
+/* ====================== features 1 ================================= */
 
-.features{
+.features {
   margin-top: 135px;
   padding: 65px 0;
 }
@@ -548,4 +548,29 @@ a {
   width: 137px;
   height: 50px;
   background: var(--primary-color);
+}
+
+/* ====================== features 2 ================================= */
+
+.features2{
+  margin-top: 70px;
+}
+
+.features2 .body {
+  flex-direction: row-reverse;
+}
+
+.features2 .conten {
+  width: 49%;
+}
+
+.features2 .images .features-img {
+  width: 470px;
+  height: 440px;
+  border-radius: 20px;
+}
+
+.features2 .conten .cta-btn {
+  width: 137px;
+  height: 50px;
 }
